@@ -1,0 +1,27 @@
+<!DOCTYPE html><!--type de document-->
+<html lang="fr"><!--indique la langue-->
+<head><!--corresponds a la tete du document-->
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Eval Final</title> <!--ecrit un titre-->
+     <link rel="stylesheet" href="style.css"> <!--relie mon fichier css a mon html et applique le contenu-->
+     <script src="script.js"></script>  <!--lie mon fichier js et applique celui ci meme si on peut ecrire le js dans mon html-->
+</head>
+<body><!--correspond au corps de la page-->
+    <h1>Projet 1</h1> <!--titre de niveau 1 et peut en avoir une seule-->
+    <p>On est le 11 Mars 2025</p> <!--zone de paragraphe-->
+    <div class="image-container"><!--pour modifier une image qu'elle soit en 1seul bloc et class pour qu'elle soit propre à elle-->
+        <img src="réparateur-démontage-dun-vieux-téléphone-portable.webp" alt="Image qui ne s'affiche pas">
+    </div> <!--pour afficher une image-->
+    <p><a href="page2.html" class="text-white">Autre page (elle est vide)</a></p> <!--pour lier un hypertexte-->
+    <button id="alertButton" class="alert-btn">Clique</button> <!--Le code JavaScript crée un bouton dans la page html et affiche une alerte lorsque le bouton est cliqué-->
+    <script> //pour ecrire du js dans mon html*/
+        document.getElementById("alertButton").addEventListener("click", function() { //appelle mon element et applique la fonction clique puis affiche une alerte*/
+            alert("Alerte : t'es mineur !"); 
+        });
+    </script>
+    <footer> <!--corresponds a mon pied de page-->
+        <p>© 2025 Mon site - Tous droits réservés</p>
+    </footer>
+</body>
+</html>
